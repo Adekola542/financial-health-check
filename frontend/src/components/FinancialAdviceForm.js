@@ -9,7 +9,8 @@ const FinancialAdviceForm = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const response = await axios.post('http://localhost:8000/financial-advice', { account_id: accountId });
+            // const response = await axios.post('http://localhost:8000/financial-advice', { account_id: accountId });
+            const response = await axios.post('https://health-check-backend-86a18c145cb5.herokuapp.com/financial-advice', { account_id: accountId });
             setAdvice(response.data.advice);
         } catch (error) {
             console.error('Error fetching financial advice:', error);
