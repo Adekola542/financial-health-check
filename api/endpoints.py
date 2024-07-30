@@ -1,7 +1,7 @@
 from fastapi import APIRouter, HTTPException, Request
 from pydantic import BaseModel
-from app.api.utils import prepare_prompt_for_advice, get_financial_advice
-from app.services.natwest_api import get_access_token, get_account_balances, get_transactions, create_account_access_consent, authorize_consent, exchange_code_for_tokens, get_credit_score
+from api.utils import prepare_prompt_for_advice, get_financial_advice
+from services.natwest_api import get_access_token, get_account_balances, get_transactions, create_account_access_consent, authorize_consent, exchange_code_for_tokens, get_credit_score
 import logging
 
 # Configure logging

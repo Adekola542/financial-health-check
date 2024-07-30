@@ -1,6 +1,6 @@
 import requests
 from urllib.parse import urlencode
-from app.core.config import settings
+from core.config import settings
 
 BASE_URL = "https://ob.sandbox.natwest.com"
 TOKEN_URL = f"{BASE_URL}/token"

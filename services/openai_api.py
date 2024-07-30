@@ -1,5 +1,5 @@
 import openai
-from app.core.config import settings
+from core.config import settings
 
 def get_financial_advice(prompt):
     openai.api_key = settings.OPENAI_API_KEY
